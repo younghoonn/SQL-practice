@@ -1,0 +1,14 @@
+＃１．住所録のテーブルを作成して下さい。
+CREATE　TABLE 住所録；
+(登録番号 INTEGER NOT NULL,
+ 名前     VARCHAR(128) NOT NULL,
+ 住所　   VARCHAR(256) NOT NULL,
+ 電話番号  VARCHAR(10) ,
+ メールアドレス  VARCHAR(10) ,
+     PRIMARY KEY (登録番号));
+
+#2.住所録の郵便番号（可変変数　長さ８，NOT NULL）
+ALTER TABLE 住所録　ADD COLUMN 郵便番号　VARCHAR(8) NOT NULL;
+
+#3.テーブル削除
+DROP TABLE 住所録；
